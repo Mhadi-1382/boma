@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "dev": "tailwindcss build static/css/input.css -o static/css/globals.css -w",
+    "w": "tailwindcss -i static/css/input.css -o static/css/globals.css --watch"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",

@@ -1,0 +1,25 @@
+{
+  "name": "بوما",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "short_name": "بوما",
+  "dir": "rtl",
+  "lang": "fa-ir",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "categories": [
+    "entertainment",
+    "utilities"
+  ],
+  "description": "بوما پلتفرم جامع گردشگری",
+  "start_url": "/",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "icons": [
+    
+  ],
+  "edge_side_panel": {
+    "preferred_width": 560
+  },
+  "scope": "/"
+}

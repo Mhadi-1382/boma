@@ -1,12 +1,47 @@
 {% extends 'includes/_base.html' %}
-
 {% load static %}
 
-{% block title %}{% endblock %}
+{% block title %}صفحه اصلی{% endblock %}
 
 
-{% block content %}
+{% block body %}
 
+    <!-- {% include 'includes/_splash.html' %} -->
+    
+    <main class="w-full md:hidden">
+        {% include 'includes/_navbar.html' %}
 
+        <section class="flex flex-col p-4 gap-2">
+            <div class="flex gap-2 p-4">
+                <a href="" class="bg-gray-100 text-center items-center p-4 flex flex-col gap-2 rounded-[26px]">
+                    <img src="{% static 'assets/images/icon/natural-cleaning.svg' %}" alt="" class="size-8">
+                    <p class="text-sm">بوم گردی</p>
+                </a>
+                <a href="" class="bg-gray-100 text-center items-center p-4 flex flex-col gap-2 rounded-[26px]">
+                    <img src="{% static 'assets/images/icon/store.svg' %}" alt="" class="size-8">
+                    <p class="text-sm">فروشگاه</p>
+                </a>
+                <a href="" class="bg-gray-100 text-center items-center p-4 flex flex-col gap-2 rounded-[26px]">
+                    <img src="{% static 'assets/images/icon/home.svg' %}" alt="" class="size-8">
+                    <p class="text-sm">جای مان</p>
+                </a>
+            </div>
+
+            <ul class="bg-blue-50 p-4 rounded-[26px]">
+                <h2 class="font-[600] mb-2">نصیحت و جمله الهام‌بخش درباره طبیعت</h2>
+                <li class="text-gray-700 text-sm mr-4" type="disc">هر قدم در جنگل، قدمی به سمت آرامش است.</li>
+                <li class="text-gray-700 text-sm mr-4" type="disc">آمل را باید نفس کشید، نه فقط دید.</li>
+                <li class="text-gray-700 text-sm mr-4" type="disc">مثل درخت ریشه داشته باش، نه فقط شاخه.</li>
+                <li class="text-gray-700 text-sm mr-4" type="disc">مثل کوه باش؛ آرام، استوار و بی‌نیاز از فریاد.</li>
+                <li class="text-gray-700 text-sm mr-4" type="disc">هر درختی که امروز سایه دارد، دیروز صبور بوده است.</li>
+            </ul>
+        </section>
+    </main>
+
+    <p class="max-md:hidden fixed inset-0 h-full w-full m-auto flex items-center justify-center text-red-500">
+        <span class="font-[600]">نسخه دسکتاپ این وب‌اپلیکیشن پشتیبانی نمی‌شود.</span>
+        <br>
+        <span>لطفاً از موبایل یا تبلت استفاده کنید.</span>
+    </p>
 
 {% endblock %}

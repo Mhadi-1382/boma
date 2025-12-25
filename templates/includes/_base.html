@@ -1,13 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="fa-IR" dir="rtl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"">
-        <meta name="robots" content="">
+        <meta name="robots" content="noindex, nofollow">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="app.css">
-        <link rel="shortcut icon" href="assets/images/Boma_logo_Icon_Mobile.svg" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+        <link rel="stylesheet" href="{% static 'css/globals.css' %}">
+        <link rel="shortcut icon" href="{% static 'assets/images/Boma_logo_Icon_Mobile.svg' %}" type="image/x-icon">
         <link rel="manifest" href="{% static 'manifest.json' %}">
         <script src="https://js.pusher.com/beams/2.1.0/push-notifications-cdn.js"></script>
         
@@ -41,4 +43,6 @@
         {% block body %}{% endblock body %}
 
     </body>
+
+    <script src="{% static 'js/app.js' %}"></script>
 </html>

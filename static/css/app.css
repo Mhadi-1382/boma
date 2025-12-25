@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Estedad";
+    src: url(../assets/fonts/Estedad.ttf);
+}
+
+
+*,
+*::after,
+*::before {
+   user-select: none; 
+}
+
+body {
+    font-family: "Estedad", Tahoma, sans-serif;
+}
+
+.splash-container-toggle {display: none !important;}
+.navbar-display-toggle {display: flex !important;}

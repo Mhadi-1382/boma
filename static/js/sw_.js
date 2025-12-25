@@ -3,6 +3,7 @@
 const CACHE = "pwabuilder-offline";
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+importScripts("https://js.pusher.com/beams/service-worker.js");
 
 self.addEventListener("message", (event) => {
 	if (event.data && event.data.type === "SKIP_WAITING") {

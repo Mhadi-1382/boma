@@ -1,0 +1,23 @@
+{% load static %}
+<nav class="bg-white p-4 flex items-center justify-between gap-2.5 sticky top-0 w-full z-200" style="border: none; border-bottom: 1px solid #ebebeb;">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 text-gray-700 p-[6px] hover:bg-gray-50 rounded-full cursor-pointer md:hidden" id="navbarBtn" onclick="navbarToggle();">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+        </svg>
+    </div>
+    <div class="navbar-overlay bg-black/60 hidden fixed inset-0" id="navbarItems">
+        <i class="fixed inset-0 cursor-pointer flex w-full h-full" onclick="navbarToggle();"></i>
+        <ul class="flex max-md:flex-col gap-2.5 max-md:fixed max-md:right-0 max-md:bottom-0 max-md:top-0 max-md:h-full max-md:w-[300px] bg-white p-4 w-full">
+            <img src="{% static 'assets/images/Boma_logo_Type_Black_FA.svg' %}" alt="" class="w-[75px] rounded-[30px] mb-7 md:hidden">
+            <a href=""><li>صفحه اصلی</li></a>
+            <a href=""><li>درباره ما</li></a>
+            <a href=""><li>ارتباط با ما</li></a>
+        </ul>
+    </div>
+    <img src="{% static 'assets/images/Boma_logo_Type_Black_EN.svg' %}" alt="" class="w-[75px] rounded-[30px]">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 text-gray-700 p-[6px] hover:bg-gray-50 rounded-full cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+    </div>
+</nav>
