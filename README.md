@@ -1,8 +1,18 @@
 # boma
+Boma is a travel platform for discovering stories.
+We see travel beyond the destination; every path, every leaf, every place has a story.
+Create a smart, inspiring and different travel experience with Boma.
+
+**Every leaf, a story**
+
 
 ## Install and Run
-1. pip install -r requirements.txt
-2. manage.py runserver
+```
+pip install -r requirements.txt
+```
+```
+manage.py runserver
+```
 
 ## Tech Stack
 - **Frontend:** HTML, CSS, TailwindCSS, JS
