@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"">
+        <meta name="robots" content="">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="app.css">
+        <link rel="shortcut icon" href="assets/images/Boma_logo_Icon_Mobile.svg" type="image/x-icon">
+        <link rel="manifest" href="{% static 'manifest.json' %}">
+        <script src="https://js.pusher.com/beams/2.1.0/push-notifications-cdn.js"></script>
+        
+        <title>{% block title %}{% endblock title %} - بوما</title>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register("{% static 'js/sw_.js' %}")
+                .then(function(reg) {
+                    console.log('Service Worker registered!', reg);
+                })
+                .catch(function(error) {
+                    console.error('Service Worker registration failed:', error);
+                });
+            }
+            
+            Notification.requestPermission();
+
+            const beamsClient = new PusherPushNotifications.Client({
+                instanceId: '2290f082-76c6-4712-bfca-bd71847cda6a',
+            });
+
+            beamsClient.start()
+            .then(() => beamsClient.addDeviceInterest('Ayah'))
+            .then(() => console.log('Successfully registered and subscribed!'))
+            .catch(console.error);
+        </script>
+    </head>
+    <body>
+        
+        {% block body %}{% endblock body %}
+
+    </body>
+</html>
