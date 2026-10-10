@@ -8,7 +8,6 @@ Create a smart, inspiring and different travel experience with Boma.
 **Every leaf, a story**
 
 
-
 ## Install and Run
 ```
 pip install -r requirements.txt
